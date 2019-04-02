@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCAFE889225302080063F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE888225302080063F668 /* AppDelegate.swift */; };
+		FCAFE88B225302080063F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE88A225302080063F668 /* ViewController.swift */; };
+		FCAFE88E225302080063F668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAFE88C225302080063F668 /* Main.storyboard */; };
+		FCAFE8902253020D0063F668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAFE88F2253020D0063F668 /* Assets.xcassets */; };
+		FCAFE8932253020D0063F668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAFE8912253020D0063F668 /* LaunchScreen.storyboard */; };
+		FCAFE89E2253020E0063F668 /* MyTaxiAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE89D2253020E0063F668 /* MyTaxiAppTests.swift */; };
+		FCAFE8AA225302E20063F668 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8A9225302E20063F668 /* NetworkManager.swift */; };
+		FCAFE8AC2253052E0063F668 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AB2253052E0063F668 /* Reachability.swift */; };
+		FCAFE8AE225306050063F668 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AD225306050063F668 /* AppConstants.swift */; };
+		FCAFE8B0225306CA0063F668 /* MTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AF225306CA0063F668 /* MTError.swift */; };
+		FCAFE8B3225323080063F668 /* MTVechileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCAFE89A2253020E0063F668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCAFE87D225302070063F668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCAFE884225302080063F668;
+			remoteInfo = MyTaxiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCAFE885225302080063F668 /* MyTaxiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAFE888225302080063F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCAFE88A225302080063F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCAFE88D225302080063F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCAFE88F2253020D0063F668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAFE8922253020D0063F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCAFE8942253020D0063F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAFE8992253020E0063F668 /* MyTaxiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTaxiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAFE89D2253020E0063F668 /* MyTaxiAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaxiAppTests.swift; sourceTree = "<group>"; };
+		FCAFE89F2253020E0063F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAFE8A9225302E20063F668 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FCAFE8AB2253052E0063F668 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		FCAFE8AD225306050063F668 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		FCAFE8AF225306CA0063F668 /* MTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTError.swift; sourceTree = "<group>"; };
+		FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTVechileDataModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCAFE882225302080063F668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAFE8962253020E0063F668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCAFE87C225302070063F668 = {
+			isa = PBXGroup;
+			children = (
+				FCAFE887225302080063F668 /* MyTaxiApp */,
+				FCAFE89C2253020E0063F668 /* MyTaxiAppTests */,
+				FCAFE886225302080063F668 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCAFE886225302080063F668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE885225302080063F668 /* MyTaxiApp.app */,
+				FCAFE8992253020E0063F668 /* MyTaxiAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCAFE887225302080063F668 /* MyTaxiApp */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE8B1225321880063F668 /* DataModel */,
+				FCAFE8A8225302B60063F668 /* NetworkHelper */,
+				FCAFE888225302080063F668 /* AppDelegate.swift */,
+				FCAFE88A225302080063F668 /* ViewController.swift */,
+				FCAFE88C225302080063F668 /* Main.storyboard */,
+				FCAFE88F2253020D0063F668 /* Assets.xcassets */,
+				FCAFE8912253020D0063F668 /* LaunchScreen.storyboard */,
+				FCAFE8942253020D0063F668 /* Info.plist */,
+			);
+			path = MyTaxiApp;
+			sourceTree = "<group>";
+		};
+		FCAFE89C2253020E0063F668 /* MyTaxiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE89D2253020E0063F668 /* MyTaxiAppTests.swift */,
+				FCAFE89F2253020E0063F668 /* Info.plist */,
+			);
+			path = MyTaxiAppTests;
+			sourceTree = "<group>";
+		};
+		FCAFE8A8225302B60063F668 /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE8AB2253052E0063F668 /* Reachability.swift */,
+				FCAFE8A9225302E20063F668 /* NetworkManager.swift */,
+				FCAFE8AD225306050063F668 /* AppConstants.swift */,
+				FCAFE8AF225306CA0063F668 /* MTError.swift */,
+			);
+			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		FCAFE8B1225321880063F668 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCAFE884225302080063F668 /* MyTaxiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAFE8A22253020E0063F668 /* Build configuration list for PBXNativeTarget "MyTaxiApp" */;
+			buildPhases = (
+				FCAFE881225302080063F668 /* Sources */,
+				FCAFE882225302080063F668 /* Frameworks */,
+				FCAFE883225302080063F668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTaxiApp;
+			productName = MyTaxiApp;
+			productReference = FCAFE885225302080063F668 /* MyTaxiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCAFE8982253020E0063F668 /* MyTaxiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAFE8A52253020E0063F668 /* Build configuration list for PBXNativeTarget "MyTaxiAppTests" */;
+			buildPhases = (
+				FCAFE8952253020E0063F668 /* Sources */,
+				FCAFE8962253020E0063F668 /* Frameworks */,
+				FCAFE8972253020E0063F668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAFE89B2253020E0063F668 /* PBXTargetDependency */,
+			);
+			name = MyTaxiAppTests;
+			productName = MyTaxiAppTests;
+			productReference = FCAFE8992253020E0063F668 /* MyTaxiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCAFE87D225302070063F668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Rahul;
+				TargetAttributes = {
+					FCAFE884225302080063F668 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FCAFE8982253020E0063F668 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FCAFE884225302080063F668;
+					};
+				};
+			};
+			buildConfigurationList = FCAFE880225302080063F668 /* Build configuration list for PBXProject "MyTaxiApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCAFE87C225302070063F668;
+			productRefGroup = FCAFE886225302080063F668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCAFE884225302080063F668 /* MyTaxiApp */,
+				FCAFE8982253020E0063F668 /* MyTaxiAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCAFE883225302080063F668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAFE8932253020D0063F668 /* LaunchScreen.storyboard in Resources */,
+				FCAFE8902253020D0063F668 /* Assets.xcassets in Resources */,
+				FCAFE88E225302080063F668 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAFE8972253020E0063F668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCAFE881225302080063F668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAFE8B3225323080063F668 /* MTVechileDataModel.swift in Sources */,
+				FCAFE8AA225302E20063F668 /* NetworkManager.swift in Sources */,
+				FCAFE88B225302080063F668 /* ViewController.swift in Sources */,
+				FCAFE8AC2253052E0063F668 /* Reachability.swift in Sources */,
+				FCAFE8B0225306CA0063F668 /* MTError.swift in Sources */,
+				FCAFE889225302080063F668 /* AppDelegate.swift in Sources */,
+				FCAFE8AE225306050063F668 /* AppConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAFE8952253020E0063F668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAFE89E2253020E0063F668 /* MyTaxiAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCAFE89B2253020E0063F668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCAFE884225302080063F668 /* MyTaxiApp */;
+			targetProxy = FCAFE89A2253020E0063F668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCAFE88C225302080063F668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCAFE88D225302080063F668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCAFE8912253020D0063F668 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCAFE8922253020D0063F668 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCAFE8A02253020E0063F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCAFE8A12253020E0063F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCAFE8A32253020E0063F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35J535SN4U;
+				INFOPLIST_FILE = MyTaxiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MyTaxiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCAFE8A42253020E0063F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35J535SN4U;
+				INFOPLIST_FILE = MyTaxiApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MyTaxiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCAFE8A62253020E0063F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35J535SN4U;
+				INFOPLIST_FILE = MyTaxiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MyTaxiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTaxiApp.app/MyTaxiApp";
+			};
+			name = Debug;
+		};
+		FCAFE8A72253020E0063F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35J535SN4U;
+				INFOPLIST_FILE = MyTaxiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rahul.MyTaxiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTaxiApp.app/MyTaxiApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCAFE880225302080063F668 /* Build configuration list for PBXProject "MyTaxiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAFE8A02253020E0063F668 /* Debug */,
+				FCAFE8A12253020E0063F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAFE8A22253020E0063F668 /* Build configuration list for PBXNativeTarget "MyTaxiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAFE8A32253020E0063F668 /* Debug */,
+				FCAFE8A42253020E0063F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAFE8A52253020E0063F668 /* Build configuration list for PBXNativeTarget "MyTaxiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAFE8A62253020E0063F668 /* Debug */,
+				FCAFE8A72253020E0063F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCAFE87D225302070063F668 /* Project object */;
+}
