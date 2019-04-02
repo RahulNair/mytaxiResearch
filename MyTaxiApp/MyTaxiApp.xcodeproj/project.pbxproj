@@ -18,6 +18,9 @@
 		FCAFE8AE225306050063F668 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AD225306050063F668 /* AppConstants.swift */; };
 		FCAFE8B0225306CA0063F668 /* MTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AF225306CA0063F668 /* MTError.swift */; };
 		FCAFE8B3225323080063F668 /* MTVechileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */; };
+		FCAFE8B9225341EC0063F668 /* VechileListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8B7225341EC0063F668 /* VechileListCell.swift */; };
+		FCAFE8BA225341EC0063F668 /* VechileListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAFE8B8225341EC0063F668 /* VechileListCell.xib */; };
+		FCAFE8BE225359DE0063F668 /* MTAppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		FCAFE8AD225306050063F668 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		FCAFE8AF225306CA0063F668 /* MTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTError.swift; sourceTree = "<group>"; };
 		FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTVechileDataModel.swift; sourceTree = "<group>"; };
+		FCAFE8B7225341EC0063F668 /* VechileListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VechileListCell.swift; sourceTree = "<group>"; };
+		FCAFE8B8225341EC0063F668 /* VechileListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VechileListCell.xib; sourceTree = "<group>"; };
+		FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTAppUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 		FCAFE887225302080063F668 /* MyTaxiApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCAFE8BC225359B30063F668 /* Utilities */,
+				FCAFE8B6225341B60063F668 /* Views */,
 				FCAFE8B1225321880063F668 /* DataModel */,
 				FCAFE8A8225302B60063F668 /* NetworkHelper */,
 				FCAFE888225302080063F668 /* AppDelegate.swift */,
@@ -125,6 +133,23 @@
 				FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		FCAFE8B6225341B60063F668 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE8B7225341EC0063F668 /* VechileListCell.swift */,
+				FCAFE8B8225341EC0063F668 /* VechileListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCAFE8BC225359B30063F668 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAFE8BA225341EC0063F668 /* VechileListCell.xib in Resources */,
 				FCAFE8932253020D0063F668 /* LaunchScreen.storyboard in Resources */,
 				FCAFE8902253020D0063F668 /* Assets.xcassets in Resources */,
 				FCAFE88E225302080063F668 /* Main.storyboard in Resources */,
@@ -232,8 +258,10 @@
 				FCAFE8AA225302E20063F668 /* NetworkManager.swift in Sources */,
 				FCAFE88B225302080063F668 /* ViewController.swift in Sources */,
 				FCAFE8AC2253052E0063F668 /* Reachability.swift in Sources */,
+				FCAFE8B9225341EC0063F668 /* VechileListCell.swift in Sources */,
 				FCAFE8B0225306CA0063F668 /* MTError.swift in Sources */,
 				FCAFE889225302080063F668 /* AppDelegate.swift in Sources */,
+				FCAFE8BE225359DE0063F668 /* MTAppUtil.swift in Sources */,
 				FCAFE8AE225306050063F668 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
