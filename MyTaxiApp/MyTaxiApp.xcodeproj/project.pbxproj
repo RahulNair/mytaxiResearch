@@ -21,6 +21,7 @@
 		FCAFE8B9225341EC0063F668 /* VechileListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8B7225341EC0063F668 /* VechileListCell.swift */; };
 		FCAFE8BA225341EC0063F668 /* VechileListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAFE8B8225341EC0063F668 /* VechileListCell.xib */; };
 		FCAFE8BE225359DE0063F668 /* MTAppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */; };
+		FCAFE8C1225365CB0063F668 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8C0225365CB0063F668 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FCAFE8B7225341EC0063F668 /* VechileListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VechileListCell.swift; sourceTree = "<group>"; };
 		FCAFE8B8225341EC0063F668 /* VechileListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VechileListCell.xib; sourceTree = "<group>"; };
 		FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTAppUtil.swift; sourceTree = "<group>"; };
+		FCAFE8C0225365CB0063F668 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +95,12 @@
 		FCAFE887225302080063F668 /* MyTaxiApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCAFE8BF225365950063F668 /* ViewController */,
 				FCAFE8BC225359B30063F668 /* Utilities */,
 				FCAFE8B6225341B60063F668 /* Views */,
 				FCAFE8B1225321880063F668 /* DataModel */,
 				FCAFE8A8225302B60063F668 /* NetworkHelper */,
 				FCAFE888225302080063F668 /* AppDelegate.swift */,
-				FCAFE88A225302080063F668 /* ViewController.swift */,
 				FCAFE88C225302080063F668 /* Main.storyboard */,
 				FCAFE88F2253020D0063F668 /* Assets.xcassets */,
 				FCAFE8912253020D0063F668 /* LaunchScreen.storyboard */,
@@ -150,6 +152,15 @@
 				FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FCAFE8BF225365950063F668 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCAFE88A225302080063F668 /* ViewController.swift */,
+				FCAFE8C0225365CB0063F668 /* MapViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				FCAFE8B3225323080063F668 /* MTVechileDataModel.swift in Sources */,
 				FCAFE8AA225302E20063F668 /* NetworkManager.swift in Sources */,
 				FCAFE88B225302080063F668 /* ViewController.swift in Sources */,
+				FCAFE8C1225365CB0063F668 /* MapViewController.swift in Sources */,
 				FCAFE8AC2253052E0063F668 /* Reachability.swift in Sources */,
 				FCAFE8B9225341EC0063F668 /* VechileListCell.swift in Sources */,
 				FCAFE8B0225306CA0063F668 /* MTError.swift in Sources */,
