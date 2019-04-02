@@ -24,6 +24,10 @@ class VechileListCell: UITableViewCell {
         self.typeLabel.text = model.vh_type
         self.statusLabel.text = model.state
         self.bearingDirection.text = MTAppUtil.getDirectionText(bearingValue: model.heading)
+        
+        if typeLabel.text == "TAXI" {
+            self.iconImageView.image = UIImage(named: "taxi_logo")
+        }
     }
     
     override func prepareForReuse() {

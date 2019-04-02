@@ -35,24 +35,24 @@ class MTAppUtil {
             bearing = Int(360-bearingValue)
 
         }else if bearingValue == 0{
-            maj = "N"
-            bearing = Int(bearingValue)
+            maj = "_N"
+            bearing = 0
 
         }else if bearingValue == 90{
-            maj = "E"
-            bearing = Int(bearingValue)
+            maj = "_E"
+            bearing = 0
 
         }else if bearingValue == 180{
-            maj = "S"
-            bearing = Int(bearingValue)
+            maj = "_S"
+            bearing = 0
 
         }else if bearingValue == 270{
-            maj = "W"
-            bearing = Int(bearingValue)
+            maj = "_W"
+            bearing = 0
 
         }else{
-            maj  = "N"
-            bearing = Int(bearingValue)
+            maj  = "_N"
+            bearing = 0
 
         }
         
