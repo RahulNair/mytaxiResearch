@@ -53,7 +53,7 @@ class MapViewController: UIViewController {
             locationManager?.delegate = self
             locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager?.startUpdatingLocation()
-            locationManager?.startUpdatingHeading()
+           // locationManager?.startUpdatingHeading()
 
         }else{
             return
@@ -70,7 +70,7 @@ class MapViewController: UIViewController {
             let annotation = TaxiAnnotation(vechileObj: element, coordinate: coord)
             annotationList.append(annotation)
             mapView.addAnnotation(annotation)
-            break
+            
         }
         
         
