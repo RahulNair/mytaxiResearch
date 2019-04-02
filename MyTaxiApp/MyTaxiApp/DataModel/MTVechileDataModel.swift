@@ -21,6 +21,7 @@ struct MTVechileDataModel : Codable {
     let state : String
     let vh_type : String
     let heading : Float64
+    let coordinate : VHCoordinate
     
     
     enum CodingKeys: String, CodingKey
@@ -29,7 +30,7 @@ struct MTVechileDataModel : Codable {
         case id
         case state
         case heading
-        
+        case coordinate = "coordinate"
     }
     
     struct VHCoordinate : Codable {
