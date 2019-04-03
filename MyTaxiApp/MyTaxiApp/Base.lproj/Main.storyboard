@@ -26,6 +26,10 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Eyi-EJ-26w"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="uUo-OP-ZiC">
+                                <rect key="frame" x="197" y="358" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kqg-Om-k8l">
                                 <rect key="frame" x="102.66666666666669" y="84" width="209" height="28"/>
                                 <constraints>
@@ -44,8 +48,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Kqg-Om-k8l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20j-wQ-T4R"/>
+                            <constraint firstItem="uUo-OP-ZiC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4z1-Nl-hZC"/>
                             <constraint firstItem="Kqg-Om-k8l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="6ld-KA-L0S"/>
                             <constraint firstItem="59C-ng-6TQ" firstAttribute="top" secondItem="Kqg-Om-k8l" secondAttribute="bottom" constant="10" id="RuN-KO-MaJ"/>
+                            <constraint firstItem="uUo-OP-ZiC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wd7-qL-xr4"/>
                             <constraint firstItem="59C-ng-6TQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="g1c-Jr-jDC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="59C-ng-6TQ" secondAttribute="trailing" constant="10" id="kXP-d1-4PC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="59C-ng-6TQ" secondAttribute="bottom" constant="10" id="zRr-bZ-XFm"/>
@@ -54,6 +60,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="83z-dk-5sl"/>
                     <connections>
+                        <outlet property="loadingActivity" destination="uUo-OP-ZiC" id="xZZ-iz-ocs"/>
                         <outlet property="tableView" destination="59C-ng-6TQ" id="ijr-W1-9Gi"/>
                     </connections>
                 </viewController>

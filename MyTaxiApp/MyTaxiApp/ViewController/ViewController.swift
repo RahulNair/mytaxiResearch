@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loadingActivity: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var appDelegate : AppDelegate?
     let cellIdentifier = "vechilelistCellID"
@@ -23,12 +24,15 @@ class ViewController: UIViewController {
         weak var w_self = self
 
         appDelegate =  (UIApplication.shared.delegate as! AppDelegate)
-        
+        self.loadingActivity.hidesWhenStopped = true
         
         
         tableView.register(UINib(nibName: "VechileListCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
+        showLoading(startAnimating: true)
+        
         loadData { (err) in
+            w_self!.showLoading(startAnimating: false)
             if err != nil{
                 print("error occurred")
             }else{
@@ -74,6 +78,23 @@ class ViewController: UIViewController {
             }
             
         })
+    }
+    
+    func showLoading(startAnimating : Bool)  {
+        
+        DispatchQueue.main.async {
+            if(startAnimating){
+                //            if(self.loadingActivity.isHidden){
+                //                self.loadingActivity.isHidden = false
+                //            }
+                
+                self.loadingActivity.startAnimating()
+            }else{
+                self.loadingActivity.stopAnimating()
+            }
+        }
+        
+        
     }
 
 }
