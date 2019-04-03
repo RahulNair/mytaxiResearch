@@ -76,10 +76,13 @@ class NetworkManager {
             var encodedUrl = urlString
             if params != nil {
                 do {
-                    let jsonData = try JSONSerialization.data(withJSONObject: params!, options: .prettyPrinted)
-                    let convertedString = String(data: jsonData, encoding: String.Encoding.utf8)
-                    let escapedAddress = convertedString?.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-                    encodedUrl = String(format: urlString, escapedAddress!)
+                    var items = [URLQueryItem]()
+                    var nURL = URLComponents(string:urlString)
+                    for (key,value) in params! {
+                        items.append(URLQueryItem(name: key, value: value as! String))
+                    }
+                    nURL?.queryItems = items
+                    encodedUrl = (nURL?.url?.absoluteString)!
                 } catch {
                     return nil
                 }

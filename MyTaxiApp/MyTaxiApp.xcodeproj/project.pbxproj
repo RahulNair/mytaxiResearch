@@ -168,7 +168,6 @@
 			children = (
 				FCAFE8AB2253052E0063F668 /* Reachability.swift */,
 				FCAFE8A9225302E20063F668 /* NetworkManager.swift */,
-				FCAFE8AD225306050063F668 /* AppConstants.swift */,
 				FCAFE8AF225306CA0063F668 /* MTError.swift */,
 			);
 			path = NetworkHelper;
@@ -194,6 +193,7 @@
 		FCAFE8BC225359B30063F668 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FCAFE8AD225306050063F668 /* AppConstants.swift */,
 				FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */,
 			);
 			path = Utilities;

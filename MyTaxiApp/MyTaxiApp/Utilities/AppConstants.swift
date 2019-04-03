@@ -11,7 +11,7 @@ import Foundation
 struct AppConstants {
     
     
-    
+    static let     hostURL                      = "https://poi-api.mytaxi.com/PoiService/poi/v1"
     
     
     struct Error {

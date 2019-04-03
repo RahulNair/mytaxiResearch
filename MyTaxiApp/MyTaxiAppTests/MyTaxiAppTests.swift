@@ -15,7 +15,7 @@ class MyTaxiAppTests: XCTestCase {
     var coordinate_b: CLLocationCoordinate2D?
     
     
-    var url = "https://poi-api.mytaxi.com/PoiService/poi/v1/"
+    var url = AppConstants.hostURL
     
     func waitForRequestDefaultTimeout() {
         self.waitForExpectations(timeout: 200, handler: { (error) -> Void in
@@ -42,10 +42,10 @@ class MyTaxiAppTests: XCTestCase {
         let instance = NetworkManager()
         let expectation = self.expectation(description: "MTTEST")
                 
-        let params : MTParams = ["p2Lat":coordinate_b?.latitude ?? 0.0,
-                                 "p2Lon": coordinate_b?.longitude ?? 0.0,
-                                 "p1Lat": coordinate_a?.latitude ?? 0.0,
-                                 "p1Lon": coordinate_a?.longitude ?? 0.0]
+        let params : MTParams = ["p2Lat":String(Double(coordinate_b?.latitude ?? 0.0)) ,
+                                 "p2Lon": String(Double(coordinate_b?.longitude ?? 0.0)),
+                                 "p1Lat": String(Double(coordinate_a?.latitude ?? 0.0)),
+                                 "p1Lon": String(Double(coordinate_a?.longitude ?? 0.0))]
         
         
         instance.performNetworkOperation(method: .get, urlString: url, params: params, header: nil) { (result) in
@@ -59,16 +59,16 @@ class MyTaxiAppTests: XCTestCase {
                 do {
                     let decoder = JSONDecoder()
                     let root = try decoder.decode(Root.self, from: value)
-//                    XCTAssertNotNil(root.poiList, "root is nil")
-//                    XCTAssert(root.poiList.count > 0, "no element in list")
-//                    let vechObj = root.poiList.first
-//                    XCTAssertNotNil(vechObj?.id, "id elmemnt is nil")
-//                    XCTAssertNotNil(vechObj?.heading, "heading elmemnt is nil")
-//                    XCTAssertNotNil(vechObj?.vh_type, "vh_type elmemnt is nil")
-//                    XCTAssertNotNil(vechObj?.coordinate, "coordinate elmemnt is nil")
+                    XCTAssertNotNil(root.poiList, "root is nil")
+                    XCTAssert(root.poiList.count > 0, "no element in list")
+                    let vechObj = root.poiList.first
+                    XCTAssertNotNil(vechObj?.id, "id elmemnt is nil")
+                    XCTAssertNotNil(vechObj?.heading, "heading elmemnt is nil")
+                    XCTAssertNotNil(vechObj?.vh_type, "vh_type elmemnt is nil")
+                    XCTAssertNotNil(vechObj?.coordinate, "coordinate elmemnt is nil")
 //
 //
-//                    XCTAssertNotNil(root.poiList, "root is nil")
+                    XCTAssertNotNil(root.poiList, "root is nil")
                   
                     expectation.fulfill()
 

@@ -74,11 +74,14 @@ class ViewController: UIViewController {
     
     func fetchData(completion:  @escaping (MTError?) -> Void)  {
         weak var w_self = self
-        let url = "https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
+        let url = AppConstants.hostURL //"https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
        
+        let params : MTParams = ["p2Lat":"53.394655",
+                                 "p2Lon":"10.099891",
+                                 "p1Lat":"53.694865",
+                                 "p1Lon":"9.757589"]
         
-        
-        appDelegate?.networkManagerSharedInstance?.performNetworkOperation(method: MTHTTPMethod.get, urlString: url, params: nil, header: nil, completion: { (result) in
+        appDelegate?.networkManagerSharedInstance?.performNetworkOperation(method: MTHTTPMethod.get, urlString: url, params: params, header: nil, completion: { (result) in
             switch result {
             case .success(let value):
                 print(value)
