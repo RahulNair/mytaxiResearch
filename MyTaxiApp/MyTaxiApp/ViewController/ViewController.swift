@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var appDelegate : AppDelegate?
     let cellIdentifier = "vechilelistCellID"
+    private let refreshControl = UIRefreshControl()
+
     
     var vechileDataList : [MTVechileDataModel] = []
    
@@ -21,17 +23,36 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        weak var w_self = self
-
         appDelegate =  (UIApplication.shared.delegate as! AppDelegate)
+        
+        loadDesign()
+        loadData()
+        
+       
+    }
+    
+    func loadDesign()  {
+        
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
+        
+        refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching taxi data !!!", attributes: nil)
+
         self.loadingActivity.hidesWhenStopped = true
-        
-        
         tableView.register(UINib(nibName: "VechileListCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        
         showLoading(startAnimating: true)
-        
-        loadData { (err) in
+
+    }
+
+    
+    func loadData()  {
+        weak var w_self = self
+      
+        fetchData { (err) in
             w_self!.showLoading(startAnimating: false)
             if err != nil{
                 print("error occurred")
@@ -44,20 +65,19 @@ class ViewController: UIViewController {
             
         }
     }
-
     
-    func loadData(completion:  @escaping (MTError?) -> Void)  {
+    func fetchData(completion:  @escaping (MTError?) -> Void)  {
         weak var w_self = self
         let url = "https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
+       
+        
+        
         appDelegate?.networkManagerSharedInstance?.performNetworkOperation(method: MTHTTPMethod.get, urlString: url, params: nil, header: nil, completion: { (result) in
             switch result {
             case .success(let value):
                 print(value)
                 do {
                     let decoder = JSONDecoder()
-                    
-                    print("******* \(String(data: value, encoding: .utf8))")
-                    
                     let root = try decoder.decode(Root.self, from: value)
                     w_self?.vechileDataList = root.poiList
                     completion(nil)
@@ -80,6 +100,12 @@ class ViewController: UIViewController {
         })
     }
     
+    
+    @objc private func refreshData(_ sender: Any) {
+      
+        loadData()
+    }
+    
     func showLoading(startAnimating : Bool)  {
         
         DispatchQueue.main.async {
@@ -91,6 +117,8 @@ class ViewController: UIViewController {
                 self.loadingActivity.startAnimating()
             }else{
                 self.loadingActivity.stopAnimating()
+                self.refreshControl.endRefreshing()
+
             }
         }
         
