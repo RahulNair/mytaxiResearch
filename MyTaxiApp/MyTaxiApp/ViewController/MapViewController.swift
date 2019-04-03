@@ -25,13 +25,24 @@ class MapViewController: UIViewController {
     var boundCordinate : CLLocationCoordinate2D?
     
     
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        locationManager?.stopUpdatingLocation()
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        locationManager?.startUpdatingLocation()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
         
-        let loc = CLLocationCoordinate2D(latitude: 53.394655, longitude: 9.757589)
         
-        centerMapOnLocation(locationCordinates: loc)
         //mapView.setUserTrackingMode(.followWithHeading, animated: false)
 
         
@@ -44,9 +55,10 @@ class MapViewController: UIViewController {
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager?.delegate = self
-            locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager?.desiredAccuracy = kCLLocationAccuracyHundredMeters
             locationManager?.startUpdatingLocation()
            // locationManager?.startUpdatingHeading()
+            
 
         }else{
             return
@@ -54,6 +66,7 @@ class MapViewController: UIViewController {
         
         
         mapView.showsUserLocation = true
+
         
     }
     
@@ -171,7 +184,9 @@ extension MapViewController : CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
        // print("locations = \(locValue.latitude) \(locValue.longitude)")
-        // centerMapOnLocation(locationCordinates: locValue)
+        locationManager?.stopUpdatingLocation()
+
+         centerMapOnLocation(locationCordinates: locValue)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
@@ -185,7 +200,7 @@ extension MapViewController : CLLocationManagerDelegate{
     func centerMapOnLocation(locationCordinates: CLLocationCoordinate2D) {
         
         let coordinateRegion = MKCoordinateRegion(center: locationCordinates, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
+            mapView.setRegion(coordinateRegion, animated: true)
     }
     
     func updateAnnotationHeader(heading: CLHeading)  {
