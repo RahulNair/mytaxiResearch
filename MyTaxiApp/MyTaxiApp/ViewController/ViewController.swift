@@ -57,11 +57,12 @@ class ViewController: UIViewController {
     
     func loadData()  {
         weak var w_self = self
-      
+
         fetchData { (err) in
             w_self!.showLoading(startAnimating: false)
             if err != nil{
                 print("error occurred")
+                self.showAlert(title: "ERROR", message: AppConstants.ErrorMessage.generalError)
             }else{
                 DispatchQueue.main.async {
                     w_self!.tableView.reloadData()
@@ -104,6 +105,8 @@ class ViewController: UIViewController {
                 
             case .failure(let error):
                 print(error)
+                completion(error)
+
             }
             
         })
@@ -170,5 +173,17 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
+    }
+}
+extension UIViewController{
+
+    func showAlert(title : String , message : String )  {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (_) in}
+        
+        let alertAction = UIAlertAction(title: "Okay", style: .default) { (_) in}
+        alert.addAction(alertAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true)
     }
 }

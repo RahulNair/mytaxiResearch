@@ -13,6 +13,10 @@ struct AppConstants {
     
     static let     hostURL                      = "https://poi-api.mytaxi.com/PoiService/poi/v1"
     
+    struct ErrorMessage {
+        static let generalError                   = "Oops something went wrong"
+        
+    }
     
     struct Error {
         static let kNoNetwork                   = "Network not available"
