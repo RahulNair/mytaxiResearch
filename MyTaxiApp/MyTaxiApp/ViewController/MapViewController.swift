@@ -20,6 +20,11 @@ class MapViewController: UIViewController {
     var vechileDataList : [MTVechileDataModel] = []
     var annotationList   : [TaxiAnnotation] = []
     
+    
+    var currentCordinate : CLLocationCoordinate2D?
+    var boundCordinate : CLLocationCoordinate2D?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
@@ -30,20 +35,8 @@ class MapViewController: UIViewController {
         //mapView.setUserTrackingMode(.followWithHeading, animated: false)
 
         
-        weak var w_self = self
         appDelegate =  (UIApplication.shared.delegate as! AppDelegate)
-        loadData { (err) in
-            if err != nil{
-                print("error occurred")
-            }else{
-                DispatchQueue.main.async {
-                    w_self?.loadDataOnMap()
-                    
-                }
-                
-            }
-            
-        }
+        
         
         locationManager  = CLLocationManager()
         locationManager?.requestAlwaysAuthorization()
@@ -65,6 +58,8 @@ class MapViewController: UIViewController {
     }
     
     func loadDataOnMap()  {
+        removeAllMarkers()
+        
         for element in vechileDataList{
             let coord = CLLocationCoordinate2D(latitude: element.coordinate.latitude, longitude: element.coordinate.longitude)
             let annotation = TaxiAnnotation(vechileObj: element, coordinate: coord)
@@ -78,8 +73,14 @@ class MapViewController: UIViewController {
     
     func loadData(completion:  @escaping (MTError?) -> Void)  {
         weak var w_self = self
-        let url = "https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891"
-        appDelegate?.networkManagerSharedInstance?.performNetworkOperation(method: MTHTTPMethod.get, urlString: url, params: nil, header: nil, completion: { (result) in
+        let url = AppConstants.hostURL
+            
+        let params : MTParams = ["p2Lat":String(Double(currentCordinate?.latitude ?? 0.0)) ,
+                                 "p2Lon": String(Double(currentCordinate?.longitude ?? 0.0)),
+                                 "p1Lat": String(Double(boundCordinate?.latitude ?? 0.0)),
+                                 "p1Lon": String(Double(boundCordinate?.longitude ?? 0.0))]
+        
+        appDelegate?.networkManagerSharedInstance?.performNetworkOperation(method: MTHTTPMethod.get, urlString: url, params: params, header: nil, completion: { (result) in
             switch result {
             case .success(let value):
                 print(value)
@@ -99,13 +100,48 @@ class MapViewController: UIViewController {
             
         })
     }
+    
+    
+    func calculateBoundCordinates(){
+        let nePoint = CGPoint(x: mapView.bounds.maxX, y: mapView.bounds.origin.y)
+        let swPoint = CGPoint(x: mapView.bounds.minX, y: mapView.bounds.maxY)
+         currentCordinate = mapView.convert(nePoint, toCoordinateFrom: mapView)
+         boundCordinate = mapView.convert(swPoint, toCoordinateFrom: mapView)
+    }
+    
+    func removeAllMarkers()  {
+        self.mapView.annotations.forEach {
+            if !($0 is MKUserLocation) {
+                self.mapView.removeAnnotation($0)
+            }
+        }
+    }
 }
 
 
 extension MapViewController : MKMapViewDelegate{
     
     
-    
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        print("----regionDidChangeAnimated- ")
+        
+        weak var w_self = self
+
+        calculateBoundCordinates()
+        
+        loadData { (err) in
+            if err != nil{
+                print("error occurred")
+            }else{
+                DispatchQueue.main.async {
+                    w_self?.loadDataOnMap()
+                    
+                }
+                
+            }
+            
+        }
+    }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let identifier = "MyPin"
@@ -129,6 +165,8 @@ extension MapViewController : MKMapViewDelegate{
 }
 
 extension MapViewController : CLLocationManagerDelegate{
+    
+    
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
