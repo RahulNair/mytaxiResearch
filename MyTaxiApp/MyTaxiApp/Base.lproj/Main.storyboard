@@ -41,7 +41,7 @@
                                     <segment title="Map"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="VzF-bO-asB" kind="show" id="Rwv-5Q-fsK"/>
+                                    <action selector="clickedSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="xud-qv-dDR"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -61,7 +61,9 @@
                     <navigationItem key="navigationItem" id="83z-dk-5sl"/>
                     <connections>
                         <outlet property="loadingActivity" destination="uUo-OP-ZiC" id="xZZ-iz-ocs"/>
+                        <outlet property="segmentControl" destination="Kqg-Om-k8l" id="uUH-kH-m6y"/>
                         <outlet property="tableView" destination="59C-ng-6TQ" id="ijr-W1-9Gi"/>
+                        <segue destination="VzF-bO-asB" kind="show" identifier="showMapViewID" id="Wzs-pk-MJr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

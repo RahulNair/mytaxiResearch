@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C1AE68061563F0F258C3E9239A5E354 /* AZSearchViewDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C244291A7468A972E1FA99FBA45F9C /* AZSearchViewDefaults.swift */; };
+		3359B32269B80AEF9DC5CC814C6141BB /* AZSearchView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB2F04D8AD49279B0A30208A4C82C22 /* AZSearchView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4547311208ECD0D6D2EC692439816CC0 /* Pods-MyTaxiAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0364DE6A885A1C8FEFA8B836F5633EFC /* Pods-MyTaxiAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50B044652FE4A839588896572EE2F191 /* AZSearchViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B80777CB4E51AA3E95B584E17A2BED /* AZSearchViewDataSource.swift */; };
+		62D95E146CFE2F673F03E4F0D20CFA5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		8B0BE0971A481303A8F2910251F0DBEA /* AZSearchView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E3EC217A7EAD0356D07DE038E5FBE9 /* AZSearchView-dummy.m */; };
+		8B43C3D7329E639B57A43E0EF5D9A9B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		A2C7E022A7E60F158A1F4F50CDB93BD5 /* Pods-MyTaxiApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6824BA132FCAA90B0E44E9C69C064E /* Pods-MyTaxiApp-dummy.m */; };
+		C3424916DA7670A3F8624A4EEB8BF18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		D61E9D761DDD61B91F48761E5DB3349D /* Pods-MyTaxiApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ECABA7B94047B9CFD62A41D0C58BA6 /* Pods-MyTaxiApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC5EF46937E543446BC5374B52328ED /* Pods-MyTaxiAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19368542DEFCB6CBC6DCF37F9E5BDAF4 /* Pods-MyTaxiAppTests-dummy.m */; };
+		F097FD41BF8821B7516EAE4D994DEC95 /* AZSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DDDFBE9FB631476D5C3F36ADC1A964 /* AZSearchViewController.swift */; };
+		F1383BB233BB3C8A493D5ED2C11173B7 /* AZSearchViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D1C54AF86A5FFEC83EC56C03061C07 /* AZSearchViewDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C51B6AEB684E6DF218BCC04C1DE4E4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E6A53037FF4A2202AB3432BB72CBBEC;
+			remoteInfo = "Pods-MyTaxiApp";
+		};
+		9CCB1B4D87C80E7099CBEADD199032D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD0D02EDA3BCBD64D721D6DC284F696F;
+			remoteInfo = AZSearchView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0364DE6A885A1C8FEFA8B836F5633EFC /* Pods-MyTaxiAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyTaxiAppTests-umbrella.h"; sourceTree = "<group>"; };
+		05ECABA7B94047B9CFD62A41D0C58BA6 /* Pods-MyTaxiApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyTaxiApp-umbrella.h"; sourceTree = "<group>"; };
+		19368542DEFCB6CBC6DCF37F9E5BDAF4 /* Pods-MyTaxiAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyTaxiAppTests-dummy.m"; sourceTree = "<group>"; };
+		2B2B8ECBC36371C9FC6AC144450815BA /* Pods-MyTaxiAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyTaxiAppTests.modulemap"; sourceTree = "<group>"; };
+		3458FD1316B14D0ABE6ABBB866ABB5F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2CAF3A2E36665B165DE11492DF515D /* Pods-MyTaxiAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyTaxiAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		4286FD491090229B49A3767D270C44C1 /* Pods-MyTaxiAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyTaxiAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		576B32E89CB582427D9390174B9225DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D3DD2806A4FD15B339DB65B7F04FB97 /* Pods-MyTaxiApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyTaxiApp-resources.sh"; sourceTree = "<group>"; };
+		60E3EC217A7EAD0356D07DE038E5FBE9 /* AZSearchView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AZSearchView-dummy.m"; sourceTree = "<group>"; };
+		63CE5C96BE913F549A623E7182B65DD3 /* Pods_MyTaxiAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyTaxiAppTests.framework; path = "Pods-MyTaxiAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661197E8F42409BD8F4BA2CFEA508D9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73639CC0DC19E1A6A801FB0C6CD4ADA8 /* Pods-MyTaxiApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyTaxiApp.modulemap"; sourceTree = "<group>"; };
+		74B2544DF53C9452AC506A705F75A473 /* Pods-MyTaxiApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyTaxiApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75B80777CB4E51AA3E95B584E17A2BED /* AZSearchViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AZSearchViewDataSource.swift; path = src/AZSearchViewDataSource.swift; sourceTree = "<group>"; };
+		77C244291A7468A972E1FA99FBA45F9C /* AZSearchViewDefaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AZSearchViewDefaults.swift; path = src/AZSearchViewDefaults.swift; sourceTree = "<group>"; };
+		7D3C1195AA015C72AD4285A88BFEDBA6 /* Pods-MyTaxiApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyTaxiApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FEA5E399708EBA35126E88FA39B3D62 /* Pods-MyTaxiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyTaxiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9443DEE6F98F353239D8E8C0392E1791 /* Pods-MyTaxiAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyTaxiAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94FFBD259579E9655B31AF70F22D417F /* AZSearchView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AZSearchView.xcconfig; sourceTree = "<group>"; };
+		9D5E47A1BAA4B420C6346A677CEF57F0 /* Pods-MyTaxiApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyTaxiApp-frameworks.sh"; sourceTree = "<group>"; };
+		A4D1C54AF86A5FFEC83EC56C03061C07 /* AZSearchViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AZSearchViewDelegate.swift; path = src/AZSearchViewDelegate.swift; sourceTree = "<group>"; };
+		A6308965045566CFC231F661B19452EF /* AZSearchView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZSearchView.framework; path = AZSearchView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81D9DB6384189970C858BC90105E913 /* Pods-MyTaxiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyTaxiApp.release.xcconfig"; sourceTree = "<group>"; };
+		BAB2F04D8AD49279B0A30208A4C82C22 /* AZSearchView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZSearchView-umbrella.h"; sourceTree = "<group>"; };
+		CA2F87BA5AD35CEA189396ACF44E904F /* Pods_MyTaxiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MyTaxiApp.framework; path = "Pods-MyTaxiApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB7B44D20B13E65D15ACEEC56A7D87A4 /* AZSearchView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AZSearchView.modulemap; sourceTree = "<group>"; };
+		DF7CB24F285F5F9679D8DA4AD71FEE47 /* Pods-MyTaxiAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyTaxiAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1DE57952FA79246EDC07DB00C9D9FF7 /* Pods-MyTaxiAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyTaxiAppTests-resources.sh"; sourceTree = "<group>"; };
+		E28C9506F17F94BA5EE252937ADC1C62 /* AZSearchView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZSearchView-prefix.pch"; sourceTree = "<group>"; };
+		E7DDDFBE9FB631476D5C3F36ADC1A964 /* AZSearchViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AZSearchViewController.swift; path = src/AZSearchViewController.swift; sourceTree = "<group>"; };
+		EC6824BA132FCAA90B0E44E9C69C064E /* Pods-MyTaxiApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyTaxiApp-dummy.m"; sourceTree = "<group>"; };
+		F75F588F9B52F0B0E4085EA19423F549 /* Pods-MyTaxiAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyTaxiAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		118E130F1E4B3277DFD21AB3A926908C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B43C3D7329E639B57A43E0EF5D9A9B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A34C17B48CE12607AA9C78702C72BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3424916DA7670A3F8624A4EEB8BF18E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2873AC05EE37D115593E57761BDD68B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D95E146CFE2F673F03E4F0D20CFA5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17B26B4EC3E88EB33B87E31D9A93EE7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6308965045566CFC231F661B19452EF /* AZSearchView.framework */,
+				CA2F87BA5AD35CEA189396ACF44E904F /* Pods_MyTaxiApp.framework */,
+				63CE5C96BE913F549A623E7182B65DD3 /* Pods_MyTaxiAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F7F094077F1147E1B044A0D2CC1273E /* AZSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				E7DDDFBE9FB631476D5C3F36ADC1A964 /* AZSearchViewController.swift */,
+				75B80777CB4E51AA3E95B584E17A2BED /* AZSearchViewDataSource.swift */,
+				77C244291A7468A972E1FA99FBA45F9C /* AZSearchViewDefaults.swift */,
+				A4D1C54AF86A5FFEC83EC56C03061C07 /* AZSearchViewDelegate.swift */,
+				B3FCE3DC884FA83FF47E70C3C62EA636 /* Support Files */,
+			);
+			name = AZSearchView;
+			path = AZSearchView;
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		58756DE1FD614AA248AF55DE694B8BCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F7F094077F1147E1B044A0D2CC1273E /* AZSearchView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				58756DE1FD614AA248AF55DE694B8BCE /* Pods */,
+				17B26B4EC3E88EB33B87E31D9A93EE7E /* Products */,
+				9FB2CB5A36557B7E4A8C74DE7F36E1A4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E23B21A476A931BAF7BDD37655C6753 /* Pods-MyTaxiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				576B32E89CB582427D9390174B9225DA /* Info.plist */,
+				2B2B8ECBC36371C9FC6AC144450815BA /* Pods-MyTaxiAppTests.modulemap */,
+				4286FD491090229B49A3767D270C44C1 /* Pods-MyTaxiAppTests-acknowledgements.markdown */,
+				F75F588F9B52F0B0E4085EA19423F549 /* Pods-MyTaxiAppTests-acknowledgements.plist */,
+				19368542DEFCB6CBC6DCF37F9E5BDAF4 /* Pods-MyTaxiAppTests-dummy.m */,
+				3B2CAF3A2E36665B165DE11492DF515D /* Pods-MyTaxiAppTests-frameworks.sh */,
+				E1DE57952FA79246EDC07DB00C9D9FF7 /* Pods-MyTaxiAppTests-resources.sh */,
+				0364DE6A885A1C8FEFA8B836F5633EFC /* Pods-MyTaxiAppTests-umbrella.h */,
+				9443DEE6F98F353239D8E8C0392E1791 /* Pods-MyTaxiAppTests.debug.xcconfig */,
+				DF7CB24F285F5F9679D8DA4AD71FEE47 /* Pods-MyTaxiAppTests.release.xcconfig */,
+			);
+			name = "Pods-MyTaxiAppTests";
+			path = "Target Support Files/Pods-MyTaxiAppTests";
+			sourceTree = "<group>";
+		};
+		90E079F7D48AFFF0A1A0D7B9B0B25D6E /* Pods-MyTaxiApp */ = {
+			isa = PBXGroup;
+			children = (
+				661197E8F42409BD8F4BA2CFEA508D9D /* Info.plist */,
+				73639CC0DC19E1A6A801FB0C6CD4ADA8 /* Pods-MyTaxiApp.modulemap */,
+				74B2544DF53C9452AC506A705F75A473 /* Pods-MyTaxiApp-acknowledgements.markdown */,
+				7D3C1195AA015C72AD4285A88BFEDBA6 /* Pods-MyTaxiApp-acknowledgements.plist */,
+				EC6824BA132FCAA90B0E44E9C69C064E /* Pods-MyTaxiApp-dummy.m */,
+				9D5E47A1BAA4B420C6346A677CEF57F0 /* Pods-MyTaxiApp-frameworks.sh */,
+				5D3DD2806A4FD15B339DB65B7F04FB97 /* Pods-MyTaxiApp-resources.sh */,
+				05ECABA7B94047B9CFD62A41D0C58BA6 /* Pods-MyTaxiApp-umbrella.h */,
+				7FEA5E399708EBA35126E88FA39B3D62 /* Pods-MyTaxiApp.debug.xcconfig */,
+				A81D9DB6384189970C858BC90105E913 /* Pods-MyTaxiApp.release.xcconfig */,
+			);
+			name = "Pods-MyTaxiApp";
+			path = "Target Support Files/Pods-MyTaxiApp";
+			sourceTree = "<group>";
+		};
+		9FB2CB5A36557B7E4A8C74DE7F36E1A4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				90E079F7D48AFFF0A1A0D7B9B0B25D6E /* Pods-MyTaxiApp */,
+				8E23B21A476A931BAF7BDD37655C6753 /* Pods-MyTaxiAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B3FCE3DC884FA83FF47E70C3C62EA636 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB7B44D20B13E65D15ACEEC56A7D87A4 /* AZSearchView.modulemap */,
+				94FFBD259579E9655B31AF70F22D417F /* AZSearchView.xcconfig */,
+				60E3EC217A7EAD0356D07DE038E5FBE9 /* AZSearchView-dummy.m */,
+				E28C9506F17F94BA5EE252937ADC1C62 /* AZSearchView-prefix.pch */,
+				BAB2F04D8AD49279B0A30208A4C82C22 /* AZSearchView-umbrella.h */,
+				3458FD1316B14D0ABE6ABBB866ABB5F0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AZSearchView";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78DA585E71C87590BDE96C0C137561EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61E9D761DDD61B91F48761E5DB3349D /* Pods-MyTaxiApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9536A425117F4CE295A8E8D197A5A018 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4547311208ECD0D6D2EC692439816CC0 /* Pods-MyTaxiAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75AEE3942F52A28FD77D46ACB02F876 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3359B32269B80AEF9DC5CC814C6141BB /* AZSearchView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E6A53037FF4A2202AB3432BB72CBBEC /* Pods-MyTaxiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B7EC6D9EDE1A7A0AD0C3DABF9DE3B3 /* Build configuration list for PBXNativeTarget "Pods-MyTaxiApp" */;
+			buildPhases = (
+				78DA585E71C87590BDE96C0C137561EB /* Headers */,
+				A57B15C3E110C16A03021C7EAE1A2EDA /* Sources */,
+				118E130F1E4B3277DFD21AB3A926908C /* Frameworks */,
+				5BE5735CB448800F59CB54557A56E665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5486DA6FF1D4BA1154FD79AEA0A903C4 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyTaxiApp";
+			productName = "Pods-MyTaxiApp";
+			productReference = CA2F87BA5AD35CEA189396ACF44E904F /* Pods_MyTaxiApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFA525872F2C6A8A6E4B39BCD3B88DB8 /* Pods-MyTaxiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55D2AC0D611F79F0FF929A134C41A5B0 /* Build configuration list for PBXNativeTarget "Pods-MyTaxiAppTests" */;
+			buildPhases = (
+				9536A425117F4CE295A8E8D197A5A018 /* Headers */,
+				456C5BD21A16F010DA64F2DB85BBEFE9 /* Sources */,
+				1A34C17B48CE12607AA9C78702C72BD0 /* Frameworks */,
+				62245120770301BF6625F96C015CCCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39B702005F15CEDAA08383BD6BE5F91 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyTaxiAppTests";
+			productName = "Pods-MyTaxiAppTests";
+			productReference = 63CE5C96BE913F549A623E7182B65DD3 /* Pods_MyTaxiAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD0D02EDA3BCBD64D721D6DC284F696F /* AZSearchView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 894981D6EFF15AD0D592CEF39623D782 /* Build configuration list for PBXNativeTarget "AZSearchView" */;
+			buildPhases = (
+				A75AEE3942F52A28FD77D46ACB02F876 /* Headers */,
+				3534820A8980C41050BFB11054DE72F1 /* Sources */,
+				2873AC05EE37D115593E57761BDD68B4 /* Frameworks */,
+				9F8115AEC14460AF6112B62BABB11BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZSearchView;
+			productName = AZSearchView;
+			productReference = A6308965045566CFC231F661B19452EF /* AZSearchView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 17B26B4EC3E88EB33B87E31D9A93EE7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD0D02EDA3BCBD64D721D6DC284F696F /* AZSearchView */,
+				4E6A53037FF4A2202AB3432BB72CBBEC /* Pods-MyTaxiApp */,
+				BFA525872F2C6A8A6E4B39BCD3B88DB8 /* Pods-MyTaxiAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE5735CB448800F59CB54557A56E665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62245120770301BF6625F96C015CCCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8115AEC14460AF6112B62BABB11BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3534820A8980C41050BFB11054DE72F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0BE0971A481303A8F2910251F0DBEA /* AZSearchView-dummy.m in Sources */,
+				F097FD41BF8821B7516EAE4D994DEC95 /* AZSearchViewController.swift in Sources */,
+				50B044652FE4A839588896572EE2F191 /* AZSearchViewDataSource.swift in Sources */,
+				2C1AE68061563F0F258C3E9239A5E354 /* AZSearchViewDefaults.swift in Sources */,
+				F1383BB233BB3C8A493D5ED2C11173B7 /* AZSearchViewDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456C5BD21A16F010DA64F2DB85BBEFE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC5EF46937E543446BC5374B52328ED /* Pods-MyTaxiAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A57B15C3E110C16A03021C7EAE1A2EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C7E022A7E60F158A1F4F50CDB93BD5 /* Pods-MyTaxiApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5486DA6FF1D4BA1154FD79AEA0A903C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AZSearchView;
+			target = DD0D02EDA3BCBD64D721D6DC284F696F /* AZSearchView */;
+			targetProxy = 9CCB1B4D87C80E7099CBEADD199032D7 /* PBXContainerItemProxy */;
+		};
+		D39B702005F15CEDAA08383BD6BE5F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MyTaxiApp";
+			target = 4E6A53037FF4A2202AB3432BB72CBBEC /* Pods-MyTaxiApp */;
+			targetProxy = 4C51B6AEB684E6DF218BCC04C1DE4E4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034689AF06456EAF92BEC67EFD601DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FFBD259579E9655B31AF70F22D417F /* AZSearchView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZSearchView/AZSearchView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZSearchView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AZSearchView/AZSearchView.modulemap";
+				PRODUCT_MODULE_NAME = AZSearchView;
+				PRODUCT_NAME = AZSearchView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		30E4CE78E5D9D27410F0834CA668F20D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FFBD259579E9655B31AF70F22D417F /* AZSearchView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AZSearchView/AZSearchView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZSearchView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AZSearchView/AZSearchView.modulemap";
+				PRODUCT_MODULE_NAME = AZSearchView;
+				PRODUCT_NAME = AZSearchView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47438DAFDD4399E2E938401B77EF2C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7CB24F285F5F9679D8DA4AD71FEE47 /* Pods-MyTaxiAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyTaxiAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyTaxiAppTests/Pods-MyTaxiAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56AD52D0C8E9E68E77ACAE3E16D6FEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9443DEE6F98F353239D8E8C0392E1791 /* Pods-MyTaxiAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyTaxiAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyTaxiAppTests/Pods-MyTaxiAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66C4FD06F6A043B213332C40623E58C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81D9DB6384189970C858BC90105E913 /* Pods-MyTaxiApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyTaxiApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyTaxiApp/Pods-MyTaxiApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF3B9573C3E95F176A82A40BDB605B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEA5E399708EBA35126E88FA39B3D62 /* Pods-MyTaxiApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MyTaxiApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyTaxiApp/Pods-MyTaxiApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55D2AC0D611F79F0FF929A134C41A5B0 /* Build configuration list for PBXNativeTarget "Pods-MyTaxiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56AD52D0C8E9E68E77ACAE3E16D6FEE3 /* Debug */,
+				47438DAFDD4399E2E938401B77EF2C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		894981D6EFF15AD0D592CEF39623D782 /* Build configuration list for PBXNativeTarget "AZSearchView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034689AF06456EAF92BEC67EFD601DAB /* Debug */,
+				30E4CE78E5D9D27410F0834CA668F20D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B7EC6D9EDE1A7A0AD0C3DABF9DE3B3 /* Build configuration list for PBXNativeTarget "Pods-MyTaxiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF3B9573C3E95F176A82A40BDB605B5 /* Debug */,
+				66C4FD06F6A043B213332C40623E58C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

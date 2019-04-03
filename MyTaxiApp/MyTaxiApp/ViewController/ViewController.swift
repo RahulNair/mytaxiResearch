@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var loadingActivity: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     var appDelegate : AppDelegate?
@@ -21,6 +22,11 @@ class ViewController: UIViewController {
    
     
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.segmentControl.selectedSegmentIndex = 0
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         appDelegate =  (UIApplication.shared.delegate as! AppDelegate)
@@ -124,7 +130,18 @@ class ViewController: UIViewController {
         
         
     }
-
+    
+    
+    @IBAction func clickedSegment(_ sender: UISegmentedControl) {
+        
+        if segmentControl.selectedSegmentIndex == 0 {
+            
+        }else{
+            performSegue(withIdentifier: "showMapViewID", sender: nil)
+        }
+        
+    }
+    
 }
 
 extension ViewController : UITableViewDataSource, UITableViewDelegate{
