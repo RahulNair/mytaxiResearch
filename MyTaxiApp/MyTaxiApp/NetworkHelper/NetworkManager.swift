@@ -34,12 +34,7 @@ class NetworkManager {
         reachability = Reachability()
     }
     
-    func intializeAPI() {
-    }
-    
-    func deinitalizeAPI() {
-        defaultSession = nil
-    }
+  
     
     // MARK: - HTTP Methods
     

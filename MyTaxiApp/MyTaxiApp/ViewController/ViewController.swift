@@ -51,12 +51,22 @@ class ViewController: UIViewController {
                 print(value)
                 do {
                     let decoder = JSONDecoder()
+                    
+                    print("******* \(String(data: value, encoding: .utf8))")
+                    
                     let root = try decoder.decode(Root.self, from: value)
                     w_self?.vechileDataList = root.poiList
                     completion(nil)
                 } catch let err {
                     print("Err", err)
-                    completion(err as! MTError)
+                    if let mtError = err as? MTError {
+                        
+                        completion(mtError)
+                    }else{
+                        let  newerr = MTError(code: 90, errorType: MTErrorType.parsingError, description: err.localizedDescription)
+                        completion(newerr)
+
+                    }
                 }
                 
             case .failure(let error):

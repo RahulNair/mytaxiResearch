@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC745956225396D200FFAEAB /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC745955225396D200FFAEAB /* NetworkManagerTests.swift */; };
+		FC7459612253A5FC00FFAEAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE88A225302080063F668 /* ViewController.swift */; };
+		FC7459622253A5FC00FFAEAB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8C0225365CB0063F668 /* MapViewController.swift */; };
+		FC7459632253A5FC00FFAEAB /* MTAppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8BD225359DE0063F668 /* MTAppUtil.swift */; };
+		FC7459642253A5FC00FFAEAB /* VechileListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8B7225341EC0063F668 /* VechileListCell.swift */; };
+		FC7459652253A5FC00FFAEAB /* MTVechileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8B2225323080063F668 /* MTVechileDataModel.swift */; };
+		FC7459662253A5FC00FFAEAB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AB2253052E0063F668 /* Reachability.swift */; };
+		FC7459672253A5FC00FFAEAB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8A9225302E20063F668 /* NetworkManager.swift */; };
+		FC7459682253A5FC00FFAEAB /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AD225306050063F668 /* AppConstants.swift */; };
+		FC7459692253A5FC00FFAEAB /* MTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE8AF225306CA0063F668 /* MTError.swift */; };
+		FC74596A2253A5FC00FFAEAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE888225302080063F668 /* AppDelegate.swift */; };
 		FCAFE889225302080063F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE888225302080063F668 /* AppDelegate.swift */; };
 		FCAFE88B225302080063F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFE88A225302080063F668 /* ViewController.swift */; };
 		FCAFE88E225302080063F668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAFE88C225302080063F668 /* Main.storyboard */; };
@@ -35,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC745955225396D200FFAEAB /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		FCAFE885225302080063F668 /* MyTaxiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTaxiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAFE888225302080063F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCAFE88A225302080063F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +126,7 @@
 			children = (
 				FCAFE89D2253020E0063F668 /* MyTaxiAppTests.swift */,
 				FCAFE89F2253020E0063F668 /* Info.plist */,
+				FC745955225396D200FFAEAB /* NetworkManagerTests.swift */,
 			);
 			path = MyTaxiAppTests;
 			sourceTree = "<group>";
@@ -282,7 +295,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC74596A2253A5FC00FFAEAB /* AppDelegate.swift in Sources */,
+				FC7459672253A5FC00FFAEAB /* NetworkManager.swift in Sources */,
+				FC7459652253A5FC00FFAEAB /* MTVechileDataModel.swift in Sources */,
+				FC7459642253A5FC00FFAEAB /* VechileListCell.swift in Sources */,
+				FC7459632253A5FC00FFAEAB /* MTAppUtil.swift in Sources */,
+				FC7459692253A5FC00FFAEAB /* MTError.swift in Sources */,
+				FC7459612253A5FC00FFAEAB /* ViewController.swift in Sources */,
+				FC745956225396D200FFAEAB /* NetworkManagerTests.swift in Sources */,
 				FCAFE89E2253020E0063F668 /* MyTaxiAppTests.swift in Sources */,
+				FC7459662253A5FC00FFAEAB /* Reachability.swift in Sources */,
+				FC7459622253A5FC00FFAEAB /* MapViewController.swift in Sources */,
+				FC7459682253A5FC00FFAEAB /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
